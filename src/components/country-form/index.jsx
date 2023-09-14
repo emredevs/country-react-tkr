@@ -14,6 +14,12 @@ export default function CountryForm() {
   return (
     <form onSubmit={formSubmit}>
       <input
+        style={{
+          outline: "2px solid black",
+          borderRadius: "20px",
+          padding: "5px",
+          margin: "0 5px",
+        }}
         type="text"
         placeholder="Country Name..."
         onChange={(e) => setSearch(e.target.value)}
